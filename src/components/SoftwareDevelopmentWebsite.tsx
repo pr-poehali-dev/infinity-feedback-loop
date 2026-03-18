@@ -229,7 +229,7 @@ const Logo = ({ className }: { className?: string }) => {
       <div className="bg-orange-500 rounded-lg p-2">
         <Workflow className="h-6 w-6 text-white" />
       </div>
-      <span className="text-xl font-bold">FlowMate</span>
+      <span className="text-xl font-bold">Ашхен Гудкова</span>
     </div>
   )
 }
@@ -472,7 +472,7 @@ export default function SoftwareDevelopmentWebsite() {
           <div className="mx-auto max-w-5xl px-6">
             <div className="text-center">
               <h2 className="text-balance text-4xl font-semibold lg:text-5xl">
-                Почему выбирают <span className="text-orange-500">FlowMate</span>
+                Почему выбирают <span className="text-orange-500">AI Агенты</span>
               </h2>
               <p className="mt-4 text-muted-foreground">
                 Автоматизируем рутину на n8n — экономим десятки часов в месяц, убираем ошибки и связываем все ваши сервисы в единую систему.
@@ -871,7 +871,7 @@ export default function SoftwareDevelopmentWebsite() {
           {/* Bottom section */}
           <div className="mt-12 pt-8 border-t border-orange-200">
             <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
-              <div className="text-sm text-muted-foreground">2025 FlowMate. Все права защищены.</div>
+              <div className="text-sm text-muted-foreground">2025 Ашхен Гудкова. Все права защищены.</div>
               <div className="flex flex-wrap justify-center sm:justify-end gap-x-6 gap-y-2 text-sm">
                 <a href="#" className="text-muted-foreground hover:text-orange-500 transition-colors">
                   Политика конфиденциальности
