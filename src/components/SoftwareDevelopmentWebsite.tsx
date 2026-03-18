@@ -201,8 +201,10 @@ const HeroHeader = () => {
                 </ul>
               </div>
               <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
-                <Button variant="outline" size="sm" className={cn(isScrolled && "lg:hidden")}>
-                  <span>Войти</span>
+                <Button variant="outline" size="sm" className={cn(isScrolled && "lg:hidden")} asChild>
+                  <a href="https://t.me/Ai_agenty_ash" target="_blank" rel="noopener noreferrer">
+                    <span>Канал</span>
+                  </a>
                 </Button>
                 <Button
                   size="sm"
@@ -211,8 +213,11 @@ const HeroHeader = () => {
                       ? "lg:inline-flex bg-orange-500 hover:bg-orange-600"
                       : "hidden bg-orange-500 hover:bg-orange-600",
                   )}
+                  asChild
                 >
-                  <span>Начать</span>
+                  <a href="https://t.me/gudkova_ash" target="_blank" rel="noopener noreferrer">
+                    <span>Начать</span>
+                  </a>
                 </Button>
               </div>
             </div>
@@ -348,8 +353,10 @@ export default function SoftwareDevelopmentWebsite() {
                       </a>
                     </Button>
                   </div>
-                  <Button key={2} size="lg" variant="ghost" className="h-10.5 rounded-xl px-5 hover:text-orange-500">
-                    <span className="text-nowrap">Примеры автоматизаций</span>
+                  <Button key={2} size="lg" variant="ghost" className="h-10.5 rounded-xl px-5 hover:text-orange-500" asChild>
+                    <a href="https://t.me/Ai_agenty_ash" target="_blank" rel="noopener noreferrer">
+                      <span className="text-nowrap">Примеры автоматизаций</span>
+                    </a>
                   </Button>
                 </AnimatedGroup>
               </div>
@@ -785,27 +792,27 @@ export default function SoftwareDevelopmentWebsite() {
               <h3 className="text-sm font-semibold text-foreground">Автоматизации</h3>
               <ul className="space-y-2 text-sm">
                 <li>
-                  <a href="#" className="text-muted-foreground hover:text-orange-500 transition-colors">
+                  <a href="https://t.me/gudkova_ash" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-orange-500 transition-colors">
                     CRM и продажи
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-muted-foreground hover:text-orange-500 transition-colors">
+                  <a href="https://t.me/gudkova_ash" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-orange-500 transition-colors">
                     Telegram-боты
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-muted-foreground hover:text-orange-500 transition-colors">
+                  <a href="https://t.me/gudkova_ash" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-orange-500 transition-colors">
                     Email и уведомления
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-muted-foreground hover:text-orange-500 transition-colors">
+                  <a href="https://t.me/gudkova_ash" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-orange-500 transition-colors">
                     Отчёты и таблицы
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-muted-foreground hover:text-orange-500 transition-colors">
+                  <a href="https://t.me/gudkova_ash" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-orange-500 transition-colors">
                     AI-воркфлоу
                   </a>
                 </li>
@@ -817,28 +824,23 @@ export default function SoftwareDevelopmentWebsite() {
               <h3 className="text-sm font-semibold text-foreground">Компания</h3>
               <ul className="space-y-2 text-sm">
                 <li>
-                  <a href="#" className="text-muted-foreground hover:text-orange-500 transition-colors">
-                    О нас
+                  <a href="#about" className="text-muted-foreground hover:text-orange-500 transition-colors">
+                    О себе
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-muted-foreground hover:text-orange-500 transition-colors">
-                    Наша команда
+                  <a href="https://t.me/Ai_agenty_ash" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-orange-500 transition-colors">
+                    Telegram-канал
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-muted-foreground hover:text-orange-500 transition-colors">
-                    Карьера
+                  <a href="https://t.me/reviews_ash" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-orange-500 transition-colors">
+                    Отзывы
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-muted-foreground hover:text-orange-500 transition-colors">
+                  <a href="#services" className="text-muted-foreground hover:text-orange-500 transition-colors">
                     Кейсы
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-muted-foreground hover:text-orange-500 transition-colors">
-                    Блог
                   </a>
                 </li>
               </ul>
@@ -873,14 +875,8 @@ export default function SoftwareDevelopmentWebsite() {
             <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
               <div className="text-sm text-muted-foreground">2025 Ашхен Гудкова. Все права защищены.</div>
               <div className="flex flex-wrap justify-center sm:justify-end gap-x-6 gap-y-2 text-sm">
-                <a href="#" className="text-muted-foreground hover:text-orange-500 transition-colors">
-                  Политика конфиденциальности
-                </a>
-                <a href="#" className="text-muted-foreground hover:text-orange-500 transition-colors">
-                  Условия использования
-                </a>
-                <a href="#" className="text-muted-foreground hover:text-orange-500 transition-colors">
-                  Политика cookies
+                <a href="https://t.me/gudkova_ash" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-orange-500 transition-colors">
+                  Написать в Telegram
                 </a>
               </div>
             </div>
