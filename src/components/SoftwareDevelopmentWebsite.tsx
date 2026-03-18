@@ -342,8 +342,10 @@ export default function SoftwareDevelopmentWebsite() {
                   className="mt-12 flex flex-col items-center justify-center gap-2 md:flex-row"
                 >
                   <div key={1} className="bg-orange-500/10 rounded-[14px] border border-orange-200 p-0.5">
-                    <Button size="lg" className="rounded-xl px-5 text-base bg-orange-500 hover:bg-orange-600">
-                      <span className="text-nowrap">Получить консультацию</span>
+                    <Button size="lg" className="rounded-xl px-5 text-base bg-orange-500 hover:bg-orange-600" asChild>
+                      <a href="https://t.me/gudkova_ash" target="_blank" rel="noopener noreferrer">
+                        <span className="text-nowrap">Получить консультацию</span>
+                      </a>
                     </Button>
                   </div>
                   <Button key={2} size="lg" variant="ghost" className="h-10.5 rounded-xl px-5 hover:text-orange-500">
@@ -527,6 +529,111 @@ export default function SoftwareDevelopmentWebsite() {
             </Card>
           </div>
         </section>
+        {/* About Section */}
+        <section className="py-16 md:py-24">
+          <div className="mx-auto max-w-5xl px-6">
+            <div className="rounded-2xl border border-orange-200 bg-muted/20 overflow-hidden">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
+                {/* Left — intro */}
+                <div className="p-8 lg:p-12 space-y-6 border-b lg:border-b-0 lg:border-r border-orange-200">
+                  <div>
+                    <div className="text-xs font-medium text-orange-500 uppercase tracking-wide mb-3">Привет!</div>
+                    <h2 className="text-3xl font-semibold leading-snug">
+                      Меня зовут <span className="text-orange-500">Ашхен Гудкова</span>
+                    </h2>
+                    <p className="mt-4 text-muted-foreground leading-relaxed">
+                      Вы попали в мою лабораторию AI-агентов, где мы превращаем сложные задачи в 1 клик.
+                    </p>
+                  </div>
+                  <div className="bg-orange-500/10 border border-orange-200 rounded-xl p-4">
+                    <p className="text-sm font-medium text-foreground mb-1">Мой фокус</p>
+                    <p className="text-sm text-muted-foreground">
+                      Я не обучаю — я создаю готовые цифровые решения и автоматизации на заказ. Показываю новые возможности технологий и освобождаю вашу голову от рутины.
+                    </p>
+                  </div>
+                  <div className="flex flex-col gap-3">
+                    <a href="https://t.me/gudkova_ash" target="_blank" rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-sm font-medium text-orange-500 hover:text-orange-400 transition-colors">
+                      <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.96 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                      </svg>
+                      @gudkova_ash — написать напрямую
+                    </a>
+                    <a href="https://t.me/reviews_ash" target="_blank" rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-orange-500 transition-colors">
+                      <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.96 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                      </svg>
+                      Отзывы о работе
+                    </a>
+                  </div>
+                </div>
+
+                {/* Right — channel content */}
+                <div className="p-8 lg:p-12 space-y-6">
+                  <div>
+                    <div className="text-xs font-medium text-orange-500 uppercase tracking-wide mb-3">3 причины подписаться на канал</div>
+                    <a href="https://t.me/Ai_agenty_ash" target="_blank" rel="noopener noreferrer"
+                      className="text-sm font-semibold hover:text-orange-500 transition-colors">t.me/Ai_agenty_ash</a>
+                  </div>
+
+                  <div className="space-y-4">
+                    <div>
+                      <p className="text-sm font-medium text-foreground mb-2">Реализованные проекты</p>
+                      <div className="space-y-1.5 text-sm text-muted-foreground">
+                        {[
+                          { label: "Бот «Карманный маркетолог»", href: "https://t.me/Ai_agenty_ash/238" },
+                          { label: "AI-агент для создания контента", href: "https://t.me/Ai_agenty_ash/227" },
+                          { label: "Обработка больших данных: ДНК", href: "https://t.me/Ai_agenty_ash/208" },
+                          { label: "Секретарь 24/7: голос → Notion", href: "https://t.me/Ai_agenty_ash/169" },
+                        ].map((item, i) => (
+                          <a key={i} href={item.href} target="_blank" rel="noopener noreferrer"
+                            className="flex items-center gap-2 hover:text-orange-500 transition-colors">
+                            <ArrowRight className="h-3 w-3 text-orange-500 shrink-0" />
+                            {item.label}
+                          </a>
+                        ))}
+                      </div>
+                    </div>
+
+                    <div>
+                      <p className="text-sm font-medium text-foreground mb-2">Хаки и инструменты</p>
+                      <div className="space-y-1.5 text-sm text-muted-foreground">
+                        {[
+                          { label: "Взлом промптов", href: "https://t.me/Ai_agenty_ash/184" },
+                          { label: "Фотошоп AI: 3 приёма идеальной генерации", href: "https://t.me/Ai_agenty_ash/206" },
+                        ].map((item, i) => (
+                          <a key={i} href={item.href} target="_blank" rel="noopener noreferrer"
+                            className="flex items-center gap-2 hover:text-orange-500 transition-colors">
+                            <ArrowRight className="h-3 w-3 text-orange-500 shrink-0" />
+                            {item.label}
+                          </a>
+                        ))}
+                      </div>
+                    </div>
+
+                    <div>
+                      <p className="text-sm font-medium text-foreground mb-2">AI-агенты — попробуй сам</p>
+                      <div className="space-y-1.5 text-sm text-muted-foreground">
+                        {[
+                          { label: "@ZvukovoeUtroBot — планировщик и мотивация", href: "https://t.me/ZvukovoeUtroBot" },
+                          { label: "@analytics_pars_bot — AI-фотосессии", href: "https://t.me/analytics_pars_bot" },
+                        ].map((item, i) => (
+                          <a key={i} href={item.href} target="_blank" rel="noopener noreferrer"
+                            className="flex items-center gap-2 hover:text-orange-500 transition-colors">
+                            <ArrowRight className="h-3 w-3 text-orange-500 shrink-0" />
+                            {item.label}
+                          </a>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Cases Section */}
         <section className="py-16 md:py-32">
           <div className="mx-auto max-w-5xl px-6">
