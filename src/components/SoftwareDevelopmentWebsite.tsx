@@ -1,7 +1,7 @@
 import * as React from "react"
 import { Slot } from "@radix-ui/react-slot"
 import { cva, type VariantProps } from "class-variance-authority"
-import { ArrowRight, ChevronRight, Menu, X, Workflow, Zap, Plug, Timer } from "lucide-react"
+import { ArrowRight, ChevronRight, Menu, X, Workflow, Zap, Plug, Timer, Bot, Dna, CheckCircle } from "lucide-react"
 import { motion, type Variants } from "framer-motion"
 import { GridMotion } from "./ui/grid-motion"
 import { cn } from "@/lib/utils"
@@ -525,6 +525,119 @@ export default function SoftwareDevelopmentWebsite() {
                 </CardContent>
               </div>
             </Card>
+          </div>
+        </section>
+        {/* Cases Section */}
+        <section className="py-16 md:py-32">
+          <div className="mx-auto max-w-5xl px-6">
+            <div className="text-center mb-16">
+              <h2 className="text-balance text-4xl font-semibold lg:text-5xl">
+                Реальные <span className="text-orange-500">кейсы</span>
+              </h2>
+              <p className="mt-4 text-muted-foreground max-w-xl mx-auto">
+                Системы, которые уже работают и приносят прибыль клиентам
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              {/* Case 1 */}
+              <div className="rounded-2xl border border-orange-200 bg-muted/30 p-8 space-y-6 hover:border-orange-400 transition-colors duration-300">
+                <div className="flex items-center gap-4">
+                  <div className="bg-orange-500 rounded-xl p-3 shrink-0">
+                    <Bot className="h-7 w-7 text-white" />
+                  </div>
+                  <div>
+                    <div className="text-xs font-medium text-orange-500 uppercase tracking-wide mb-1">Telegram-бот</div>
+                    <h3 className="text-xl font-semibold">Карманный маркетолог</h3>
+                  </div>
+                </div>
+
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  AI-бот с 9 агентами для написания контента в соцсети. База знаний с видео по блокам, реферальная система, оплата через GetCourse с автооплатой и системой дожимных писем.
+                </p>
+
+                <div className="space-y-2">
+                  {[
+                    "19 воркфлоу — контент, оплата, напоминания",
+                    "Система дожима: письма за 3, 2, 1 день до оплаты",
+                    "Supabase: состояния, ниша, ЦА, цели пользователя",
+                    "Error-handler — уведомления пользователю и админу",
+                    "Дашборд аналитики: новые, оплатившие, касания",
+                  ].map((item, i) => (
+                    <div key={i} className="flex items-start gap-2">
+                      <CheckCircle className="h-4 w-4 text-orange-500 mt-0.5 shrink-0" />
+                      <span className="text-sm text-muted-foreground">{item}</span>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="pt-2 border-t border-orange-200">
+                  <div className="flex items-center gap-6">
+                    <div>
+                      <div className="text-2xl font-bold text-orange-500">2 нед.</div>
+                      <div className="text-xs text-muted-foreground">до запуска MVP</div>
+                    </div>
+                    <div>
+                      <div className="text-2xl font-bold text-orange-500">1 нед.</div>
+                      <div className="text-xs text-muted-foreground">до окупаемости</div>
+                    </div>
+                    <div>
+                      <div className="text-2xl font-bold text-orange-500">19</div>
+                      <div className="text-xs text-muted-foreground">воркфлоу</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Case 2 */}
+              <div className="rounded-2xl border border-orange-200 bg-muted/30 p-8 space-y-6 hover:border-orange-400 transition-colors duration-300">
+                <div className="flex items-center gap-4">
+                  <div className="bg-orange-500 rounded-xl p-3 shrink-0">
+                    <Dna className="h-7 w-7 text-white" />
+                  </div>
+                  <div>
+                    <div className="text-xs font-medium text-orange-500 uppercase tracking-wide mb-1">Медицина / ДНК</div>
+                    <h3 className="text-xl font-semibold">Анализатор ДНК</h3>
+                  </div>
+                </div>
+
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  Система анализа сырых ДНК-данных пациента: 627 тысяч маркеров парсятся, сопоставляются с экспертной базой в Supabase и формируют персональный отчёт с рекомендациями.
+                </p>
+
+                <div className="space-y-2">
+                  {[
+                    "627 000 ДНК-маркеров из сырого файла пациента",
+                    "SQL-запросы к базе экспертных интерпретаций",
+                    "Полный PDF-отчёт с рекомендациями по генам",
+                    "Саммари от нейросети в текстовом формате",
+                    "Чек-лист с ключевыми находками для пациента",
+                  ].map((item, i) => (
+                    <div key={i} className="flex items-start gap-2">
+                      <CheckCircle className="h-4 w-4 text-orange-500 mt-0.5 shrink-0" />
+                      <span className="text-sm text-muted-foreground">{item}</span>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="pt-2 border-t border-orange-200">
+                  <div className="flex items-center gap-6">
+                    <div>
+                      <div className="text-2xl font-bold text-orange-500">627K</div>
+                      <div className="text-xs text-muted-foreground">ДНК-маркеров</div>
+                    </div>
+                    <div>
+                      <div className="text-2xl font-bold text-orange-500">3</div>
+                      <div className="text-xs text-muted-foreground">формата отчёта</div>
+                    </div>
+                    <div>
+                      <div className="text-2xl font-bold text-orange-500">AI</div>
+                      <div className="text-xs text-muted-foreground">интерпретация</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </main>
