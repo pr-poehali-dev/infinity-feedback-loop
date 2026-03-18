@@ -1,7 +1,7 @@
 import * as React from "react"
 import { Slot } from "@radix-ui/react-slot"
 import { cva, type VariantProps } from "class-variance-authority"
-import { ArrowRight, ChevronRight, Menu, X, Code, Zap, Settings2, Sparkles } from "lucide-react"
+import { ArrowRight, ChevronRight, Menu, X, Workflow, Zap, Plug, Timer } from "lucide-react"
 import { motion, type Variants } from "framer-motion"
 import { GridMotion } from "./ui/grid-motion"
 import { cn } from "@/lib/utils"
@@ -125,9 +125,9 @@ const transitionVariants = {
 }
 
 const menuItems = [
-  { name: "Услуги", href: "#services" },
-  { name: "Решения", href: "#solutions" },
-  { name: "О нас", href: "#about" },
+  { name: "Возможности", href: "#services" },
+  { name: "Интеграции", href: "#solutions" },
+  { name: "Кейсы", href: "#about" },
   { name: "Контакты", href: "#contact" },
 ]
 
@@ -227,9 +227,9 @@ const Logo = ({ className }: { className?: string }) => {
   return (
     <div className={cn("flex items-center space-x-2", className)}>
       <div className="bg-orange-500 rounded-lg p-2">
-        <Code className="h-6 w-6 text-white" />
+        <Workflow className="h-6 w-6 text-white" />
       </div>
-      <span className="text-xl font-bold">КодМастер</span>
+      <span className="text-xl font-bold">FlowMate</span>
     </div>
   )
 }
@@ -301,7 +301,7 @@ export default function SoftwareDevelopmentWebsite() {
                     href="#services"
                     className="hover:bg-background dark:hover:border-t-border bg-muted group mx-auto flex w-fit items-center gap-4 rounded-full border p-1 pl-4 shadow-md shadow-black/5 transition-all duration-300 dark:border-t-white/5 dark:shadow-zinc-950"
                   >
-                    <span className="text-foreground text-sm">Индивидуальные решения для малого бизнеса</span>
+                    <span className="text-foreground text-sm">Автоматизация бизнес-процессов на n8n</span>
                     <span className="dark:border-background block h-4 w-0.5 border-l bg-white dark:bg-zinc-700"></span>
 
                     <div className="bg-background group-hover:bg-muted size-6 overflow-hidden rounded-full duration-500">
@@ -317,14 +317,13 @@ export default function SoftwareDevelopmentWebsite() {
                   </a>
 
                   <h1 className="mt-8 max-w-4xl mx-auto text-balance text-6xl md:text-7xl lg:mt-16 xl:text-[5.25rem]">
-                    Трансформируйте бизнес с{" "}
+                    Освободите время с{" "}
                     <span className="inline-block text-orange-500 text-6xl md:text-7xl xl:text-[5.25rem] font-semibold">
-                      современным ПО
+                      умной автоматизацией
                     </span>
                   </h1>
                   <p className="mx-auto mt-8 max-w-2xl text-balance text-lg text-muted-foreground">
-                    Создаем масштабируемые и эффективные программные решения под ваши бизнес-задачи.
-                    От веб-приложений до мобильных приложений - помогаем малому бизнесу расти с помощью технологий.
+                    Настраиваем n8n-воркфлоу под ваш бизнес — связываем CRM, мессенджеры, таблицы и сервисы без единой строки кода. Вы занимаетесь бизнесом, рутина работает сама.
                   </p>
                 </AnimatedGroup>
 
@@ -344,11 +343,11 @@ export default function SoftwareDevelopmentWebsite() {
                 >
                   <div key={1} className="bg-orange-500/10 rounded-[14px] border border-orange-200 p-0.5">
                     <Button size="lg" className="rounded-xl px-5 text-base bg-orange-500 hover:bg-orange-600">
-                      <span className="text-nowrap">Бесплатная консультация</span>
+                      <span className="text-nowrap">Получить консультацию</span>
                     </Button>
                   </div>
                   <Button key={2} size="lg" variant="ghost" className="h-10.5 rounded-xl px-5 hover:text-orange-500">
-                    <span className="text-nowrap">Наши работы</span>
+                    <span className="text-nowrap">Примеры автоматизаций</span>
                   </Button>
                 </AnimatedGroup>
               </div>
@@ -383,7 +382,7 @@ export default function SoftwareDevelopmentWebsite() {
                 <div className="group relative m-auto max-w-5xl px-6">
                   <div className="absolute inset-0 z-10 flex scale-95 items-center justify-center opacity-0 duration-500 group-hover:scale-100 group-hover:opacity-100">
                     <a href="#contact" className="block text-sm duration-150 hover:opacity-75 text-orange-500">
-                      <span>Готовы начать проект?</span>
+                      <span>Готовы автоматизировать бизнес?</span>
                       <ChevronRight className="ml-1 inline-block size-3" />
                     </a>
                   </div>
@@ -471,57 +470,57 @@ export default function SoftwareDevelopmentWebsite() {
           <div className="mx-auto max-w-5xl px-6">
             <div className="text-center">
               <h2 className="text-balance text-4xl font-semibold lg:text-5xl">
-                Почему выбирают <span className="text-orange-500">КодМастер</span>
+                Почему выбирают <span className="text-orange-500">FlowMate</span>
               </h2>
               <p className="mt-4 text-muted-foreground">
-                Мы создаем качественные программные решения, которые помогают вашему бизнесу расти и преуспевать в цифровом мире.
+                Автоматизируем рутину на n8n — экономим десятки часов в месяц, убираем ошибки и связываем все ваши сервисы в единую систему.
               </p>
             </div>
             <Card className="mx-auto mt-8 grid max-w-sm divide-y overflow-hidden shadow-zinc-950/5 border-orange-200 *:text-center md:mt-16 md:max-w-full md:grid-cols-3 md:divide-x md:divide-y-0">
               <div className="group shadow-zinc-950/5">
                 <CardHeader className="pb-3">
                   <CardDecorator>
+                    <Timer className="size-6 text-orange-500" aria-hidden />
+                  </CardDecorator>
+
+                  <h3 className="mt-6 font-medium">Экономия времени</h3>
+                </CardHeader>
+
+                <CardContent>
+                  <p className="text-sm text-muted-foreground">
+                    Рутинные задачи выполняются автоматически 24/7. Вы экономите от 20 до 80 часов в месяц на ручной работе.
+                  </p>
+                </CardContent>
+              </div>
+
+              <div className="group shadow-zinc-950/5">
+                <CardHeader className="pb-3">
+                  <CardDecorator>
+                    <Plug className="size-6 text-orange-500" aria-hidden />
+                  </CardDecorator>
+
+                  <h3 className="mt-6 font-medium">400+ интеграций</h3>
+                </CardHeader>
+
+                <CardContent>
+                  <p className="text-sm text-muted-foreground">
+                    CRM, Telegram, Google Sheets, Notion, Битрикс24, WhatsApp — связываем любые сервисы в единую цепочку.
+                  </p>
+                </CardContent>
+              </div>
+
+              <div className="group shadow-zinc-950/5">
+                <CardHeader className="pb-3">
+                  <CardDecorator>
                     <Zap className="size-6 text-orange-500" aria-hidden />
                   </CardDecorator>
 
-                  <h3 className="mt-6 font-medium">Быстрая разработка</h3>
+                  <h3 className="mt-6 font-medium">Без кода и ИТ-отдела</h3>
                 </CardHeader>
 
                 <CardContent>
                   <p className="text-sm text-muted-foreground">
-                    Быстрое прототипирование и гибкий процесс разработки для скорейшего вывода вашего продукта на рынок.
-                  </p>
-                </CardContent>
-              </div>
-
-              <div className="group shadow-zinc-950/5">
-                <CardHeader className="pb-3">
-                  <CardDecorator>
-                    <Settings2 className="size-6 text-orange-500" aria-hidden />
-                  </CardDecorator>
-
-                  <h3 className="mt-6 font-medium">Масштабируемые решения</h3>
-                </CardHeader>
-
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    Созданы для роста вместе с вашим бизнесом - наши решения масштабируются по мере развития ваших потребностей.
-                  </p>
-                </CardContent>
-              </div>
-
-              <div className="group shadow-zinc-950/5">
-                <CardHeader className="pb-3">
-                  <CardDecorator>
-                    <Sparkles className="size-6 text-orange-500" aria-hidden />
-                  </CardDecorator>
-
-                  <h3 className="mt-6 font-medium">Современные технологии</h3>
-                </CardHeader>
-
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    Используем новейшие технологии и лучшие практики, чтобы ваше ПО было готово к будущему.
+                    Настраиваем всё под ключ — вам не нужны программисты. Просто опишите задачу, мы автоматизируем.
                   </p>
                 </CardContent>
               </div>
@@ -537,7 +536,7 @@ export default function SoftwareDevelopmentWebsite() {
             <div className="space-y-4 sm:col-span-2 lg:col-span-1">
               <Logo />
               <p className="text-sm text-muted-foreground max-w-xs">
-                Трансформируйте свой бизнес с помощью индивидуальных программных решений. Создаем масштабируемые приложения, которые растут вместе с вашим успехом.
+                Автоматизируем бизнес-процессы на n8n — освобождаем ваше время от рутины и связываем все сервисы в единую умную систему.
               </p>
               <div className="flex space-x-4">
                 <a href="#" className="text-muted-foreground hover:text-orange-500 transition-colors">
@@ -560,31 +559,31 @@ export default function SoftwareDevelopmentWebsite() {
 
             {/* Services */}
             <div className="space-y-4">
-              <h3 className="text-sm font-semibold text-foreground">Услуги</h3>
+              <h3 className="text-sm font-semibold text-foreground">Автоматизации</h3>
               <ul className="space-y-2 text-sm">
                 <li>
                   <a href="#" className="text-muted-foreground hover:text-orange-500 transition-colors">
-                    Веб-разработка
+                    CRM и продажи
                   </a>
                 </li>
                 <li>
                   <a href="#" className="text-muted-foreground hover:text-orange-500 transition-colors">
-                    Мобильные приложения
+                    Telegram-боты
                   </a>
                 </li>
                 <li>
                   <a href="#" className="text-muted-foreground hover:text-orange-500 transition-colors">
-                    Заказное ПО
+                    Email и уведомления
                   </a>
                 </li>
                 <li>
                   <a href="#" className="text-muted-foreground hover:text-orange-500 transition-colors">
-                    Разработка API
+                    Отчёты и таблицы
                   </a>
                 </li>
                 <li>
                   <a href="#" className="text-muted-foreground hover:text-orange-500 transition-colors">
-                    Облачные решения
+                    AI-воркфлоу
                   </a>
                 </li>
               </ul>
@@ -635,7 +634,7 @@ export default function SoftwareDevelopmentWebsite() {
                       d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                     />
                   </svg>
-                  <span className="break-all">info@kodmaster.ru</span>
+                  <span className="break-all">info@flowmate.ru</span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <svg className="h-4 w-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -676,7 +675,7 @@ export default function SoftwareDevelopmentWebsite() {
           {/* Bottom section */}
           <div className="mt-12 pt-8 border-t border-orange-200">
             <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
-              <div className="text-sm text-muted-foreground">2024 КодМастер. Все права защищены.</div>
+              <div className="text-sm text-muted-foreground">2025 FlowMate. Все права защищены.</div>
               <div className="flex flex-wrap justify-center sm:justify-end gap-x-6 gap-y-2 text-sm">
                 <a href="#" className="text-muted-foreground hover:text-orange-500 transition-colors">
                   Политика конфиденциальности
