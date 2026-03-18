@@ -638,6 +638,16 @@ export default function SoftwareDevelopmentWebsite() {
                 </div>
               </div>
             </div>
+
+            <div className="mt-12 text-center">
+              <div className="bg-orange-500/10 rounded-[14px] border border-orange-200 p-0.5 inline-block">
+                <Button size="lg" className="rounded-xl px-8 text-base bg-orange-500 hover:bg-orange-600">
+                  <span>Обсудить похожий проект</span>
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </div>
+              <p className="mt-3 text-sm text-muted-foreground">Расскажите задачу — разберём и предложим решение</p>
+            </div>
           </div>
         </section>
       </main>
